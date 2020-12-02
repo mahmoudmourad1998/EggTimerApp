@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/Theme.AppCompat">
+
+    <SeekBar
+        android:id="@+id/mySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/oval"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/eggImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mySeekBar"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/egg" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="00:00"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="180dp"
+        android:text="Go!"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
